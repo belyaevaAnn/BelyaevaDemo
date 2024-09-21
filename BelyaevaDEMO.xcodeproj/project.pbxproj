@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE90F6F12C9E64BF00A180FF /* BelyaevaDEMOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F6F02C9E64BF00A180FF /* BelyaevaDEMOApp.swift */; };
+		CE90F6F32C9E64BF00A180FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F6F22C9E64BF00A180FF /* ContentView.swift */; };
+		CE90F6F52C9E64C100A180FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE90F6F42C9E64C100A180FF /* Assets.xcassets */; };
+		CE90F6F82C9E64C100A180FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE90F6F72C9E64C100A180FF /* Preview Assets.xcassets */; };
+		CE90F7022C9E662200A180FF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7012C9E662200A180FF /* SignUpView.swift */; };
+		CE90F7052C9E670200A180FF /* GrayText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7042C9E670200A180FF /* GrayText.swift */; };
+		CE90F7072C9E678100A180FF /* GrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7062C9E678100A180FF /* GrayTextField.swift */; };
+		CE90F7092C9E67D900A180FF /* GraySecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7082C9E67D900A180FF /* GraySecureField.swift */; };
+		CE90F70B2C9E680F00A180FF /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F70A2C9E680F00A180FF /* CheckBox.swift */; };
+		CE90F70D2C9E687C00A180FF /* OrangeLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F70C2C9E687C00A180FF /* OrangeLink.swift */; };
+		CE90F70F2C9E692D00A180FF /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F70E2C9E692D00A180FF /* LogInView.swift */; };
+		CE90F7112C9E6C5600A180FF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7102C9E6C5600A180FF /* SignUpViewModel.swift */; };
+		CE90F7132C9E6E2800A180FF /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7122C9E6E2800A180FF /* SupabaseManager.swift */; };
+		CE90F7162C9E6E3C00A180FF /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = CE90F7152C9E6E3C00A180FF /* Auth */; };
+		CE90F7182C9E6E3C00A180FF /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = CE90F7172C9E6E3C00A180FF /* Functions */; };
+		CE90F71A2C9E6E3C00A180FF /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = CE90F7192C9E6E3C00A180FF /* PostgREST */; };
+		CE90F71C2C9E6E3C00A180FF /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = CE90F71B2C9E6E3C00A180FF /* Realtime */; };
+		CE90F71E2C9E6E3C00A180FF /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = CE90F71D2C9E6E3C00A180FF /* Storage */; };
+		CE90F7212C9E6E5C00A180FF /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE90F7202C9E6E5C00A180FF /* Supabase */; };
+		CE90F7232C9E6E9C00A180FF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7222C9E6E9C00A180FF /* UserModel.swift */; };
+		CE90F7252C9E70B300A180FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7242C9E70B300A180FF /* HomeView.swift */; };
+		CE90F7272C9E713A00A180FF /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7262C9E713A00A180FF /* KeyChainManager.swift */; };
+		CE90F7292C9E737100A180FF /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F7282C9E737100A180FF /* ForgotPasswordView.swift */; };
+		CE90F72B2C9E75E200A180FF /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F72A2C9E75E200A180FF /* OTPVerificationView.swift */; };
+		CE90F72D2C9E7E4C00A180FF /* BoxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F72C2C9E7E4C00A180FF /* BoxTextField.swift */; };
+		CE90F72F2C9E812400A180FF /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F72E2C9E812400A180FF /* NewPasswordView.swift */; };
+		CE90F7362C9E850300A180FF /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90F7322C9E850200A180FF /* Roboto-Medium.ttf */; };
+		CE90F7372C9E850300A180FF /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90F7332C9E850200A180FF /* Roboto-Bold.ttf */; };
+		CE90F7382C9E850300A180FF /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90F7342C9E850200A180FF /* Roboto-Black.ttf */; };
+		CE90F7392C9E850300A180FF /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE90F7352C9E850300A180FF /* Roboto-Regular.ttf */; };
+		CE90F73D2C9E85ED00A180FF /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90F73C2C9E85ED00A180FF /* Fonts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE90F6ED2C9E64BF00A180FF /* BelyaevaDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelyaevaDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE90F6F02C9E64BF00A180FF /* BelyaevaDEMOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelyaevaDEMOApp.swift; sourceTree = "<group>"; };
+		CE90F6F22C9E64BF00A180FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE90F6F42C9E64C100A180FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE90F6F72C9E64C100A180FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE90F7012C9E662200A180FF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CE90F7042C9E670200A180FF /* GrayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayText.swift; sourceTree = "<group>"; };
+		CE90F7062C9E678100A180FF /* GrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextField.swift; sourceTree = "<group>"; };
+		CE90F7082C9E67D900A180FF /* GraySecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraySecureField.swift; sourceTree = "<group>"; };
+		CE90F70A2C9E680F00A180FF /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		CE90F70C2C9E687C00A180FF /* OrangeLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeLink.swift; sourceTree = "<group>"; };
+		CE90F70E2C9E692D00A180FF /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		CE90F7102C9E6C5600A180FF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		CE90F7122C9E6E2800A180FF /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		CE90F7222C9E6E9C00A180FF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CE90F7242C9E70B300A180FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE90F7262C9E713A00A180FF /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		CE90F7282C9E737100A180FF /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		CE90F72A2C9E75E200A180FF /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
+		CE90F72C2C9E7E4C00A180FF /* BoxTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxTextField.swift; sourceTree = "<group>"; };
+		CE90F72E2C9E812400A180FF /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
+		CE90F7322C9E850200A180FF /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CE90F7332C9E850200A180FF /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CE90F7342C9E850200A180FF /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		CE90F7352C9E850300A180FF /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CE90F73C2C9E85ED00A180FF /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE90F6EA2C9E64BF00A180FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE90F71A2C9E6E3C00A180FF /* PostgREST in Frameworks */,
+				CE90F7182C9E6E3C00A180FF /* Functions in Frameworks */,
+				CE90F7212C9E6E5C00A180FF /* Supabase in Frameworks */,
+				CE90F7162C9E6E3C00A180FF /* Auth in Frameworks */,
+				CE90F71E2C9E6E3C00A180FF /* Storage in Frameworks */,
+				CE90F71C2C9E6E3C00A180FF /* Realtime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE90F6E42C9E64BF00A180FF = {
+			isa = PBXGroup;
+			children = (
+				CE90F6EF2C9E64BF00A180FF /* BelyaevaDEMO */,
+				CE90F6EE2C9E64BF00A180FF /* Products */,
+				CE90F71F2C9E6E5C00A180FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE90F6EE2C9E64BF00A180FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F6ED2C9E64BF00A180FF /* BelyaevaDEMO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE90F6EF2C9E64BF00A180FF /* BelyaevaDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7302C9E846900A180FF /* Common */,
+				CE90F7002C9E64F100A180FF /* Model */,
+				CE90F6FF2C9E64E900A180FF /* ViewModel */,
+				CE90F6FE2C9E64D900A180FF /* View */,
+				CE90F6F02C9E64BF00A180FF /* BelyaevaDEMOApp.swift */,
+				CE90F6F42C9E64C100A180FF /* Assets.xcassets */,
+				CE90F6F62C9E64C100A180FF /* Preview Content */,
+			);
+			path = BelyaevaDEMO;
+			sourceTree = "<group>";
+		};
+		CE90F6F62C9E64C100A180FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F6F72C9E64C100A180FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE90F6FE2C9E64D900A180FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7032C9E66E800A180FF /* Component */,
+				CE90F6F22C9E64BF00A180FF /* ContentView.swift */,
+				CE90F7012C9E662200A180FF /* SignUpView.swift */,
+				CE90F70E2C9E692D00A180FF /* LogInView.swift */,
+				CE90F7242C9E70B300A180FF /* HomeView.swift */,
+				CE90F7282C9E737100A180FF /* ForgotPasswordView.swift */,
+				CE90F72A2C9E75E200A180FF /* OTPVerificationView.swift */,
+				CE90F72E2C9E812400A180FF /* NewPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE90F6FF2C9E64E900A180FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7122C9E6E2800A180FF /* SupabaseManager.swift */,
+				CE90F7102C9E6C5600A180FF /* SignUpViewModel.swift */,
+				CE90F7262C9E713A00A180FF /* KeyChainManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE90F7002C9E64F100A180FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7222C9E6E9C00A180FF /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE90F7032C9E66E800A180FF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7042C9E670200A180FF /* GrayText.swift */,
+				CE90F7062C9E678100A180FF /* GrayTextField.swift */,
+				CE90F7082C9E67D900A180FF /* GraySecureField.swift */,
+				CE90F70A2C9E680F00A180FF /* CheckBox.swift */,
+				CE90F70C2C9E687C00A180FF /* OrangeLink.swift */,
+				CE90F72C2C9E7E4C00A180FF /* BoxTextField.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		CE90F71F2C9E6E5C00A180FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE90F7302C9E846900A180FF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7312C9E847300A180FF /* Font */,
+				CE90F73C2C9E85ED00A180FF /* Fonts.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE90F7312C9E847300A180FF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CE90F7342C9E850200A180FF /* Roboto-Black.ttf */,
+				CE90F7332C9E850200A180FF /* Roboto-Bold.ttf */,
+				CE90F7322C9E850200A180FF /* Roboto-Medium.ttf */,
+				CE90F7352C9E850300A180FF /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE90F6EC2C9E64BF00A180FF /* BelyaevaDEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE90F6FB2C9E64C100A180FF /* Build configuration list for PBXNativeTarget "BelyaevaDEMO" */;
+			buildPhases = (
+				CE90F6E92C9E64BF00A180FF /* Sources */,
+				CE90F6EA2C9E64BF00A180FF /* Frameworks */,
+				CE90F6EB2C9E64BF00A180FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BelyaevaDEMO;
+			packageProductDependencies = (
+				CE90F7152C9E6E3C00A180FF /* Auth */,
+				CE90F7172C9E6E3C00A180FF /* Functions */,
+				CE90F7192C9E6E3C00A180FF /* PostgREST */,
+				CE90F71B2C9E6E3C00A180FF /* Realtime */,
+				CE90F71D2C9E6E3C00A180FF /* Storage */,
+				CE90F7202C9E6E5C00A180FF /* Supabase */,
+			);
+			productName = BelyaevaDEMO;
+			productReference = CE90F6ED2C9E64BF00A180FF /* BelyaevaDEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE90F6E52C9E64BF00A180FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CE90F6EC2C9E64BF00A180FF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = CE90F6E82C9E64BF00A180FF /* Build configuration list for PBXProject "BelyaevaDEMO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE90F6E42C9E64BF00A180FF;
+			packageReferences = (
+				CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = CE90F6EE2C9E64BF00A180FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE90F6EC2C9E64BF00A180FF /* BelyaevaDEMO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE90F6EB2C9E64BF00A180FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE90F7392C9E850300A180FF /* Roboto-Regular.ttf in Resources */,
+				CE90F6F82C9E64C100A180FF /* Preview Assets.xcassets in Resources */,
+				CE90F6F52C9E64C100A180FF /* Assets.xcassets in Resources */,
+				CE90F7382C9E850300A180FF /* Roboto-Black.ttf in Resources */,
+				CE90F7372C9E850300A180FF /* Roboto-Bold.ttf in Resources */,
+				CE90F7362C9E850300A180FF /* Roboto-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE90F6E92C9E64BF00A180FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE90F72F2C9E812400A180FF /* NewPasswordView.swift in Sources */,
+				CE90F7072C9E678100A180FF /* GrayTextField.swift in Sources */,
+				CE90F6F32C9E64BF00A180FF /* ContentView.swift in Sources */,
+				CE90F7252C9E70B300A180FF /* HomeView.swift in Sources */,
+				CE90F7112C9E6C5600A180FF /* SignUpViewModel.swift in Sources */,
+				CE90F7092C9E67D900A180FF /* GraySecureField.swift in Sources */,
+				CE90F72B2C9E75E200A180FF /* OTPVerificationView.swift in Sources */,
+				CE90F7272C9E713A00A180FF /* KeyChainManager.swift in Sources */,
+				CE90F70B2C9E680F00A180FF /* CheckBox.swift in Sources */,
+				CE90F7052C9E670200A180FF /* GrayText.swift in Sources */,
+				CE90F70D2C9E687C00A180FF /* OrangeLink.swift in Sources */,
+				CE90F72D2C9E7E4C00A180FF /* BoxTextField.swift in Sources */,
+				CE90F70F2C9E692D00A180FF /* LogInView.swift in Sources */,
+				CE90F7132C9E6E2800A180FF /* SupabaseManager.swift in Sources */,
+				CE90F7022C9E662200A180FF /* SignUpView.swift in Sources */,
+				CE90F7232C9E6E9C00A180FF /* UserModel.swift in Sources */,
+				CE90F7292C9E737100A180FF /* ForgotPasswordView.swift in Sources */,
+				CE90F73D2C9E85ED00A180FF /* Fonts.swift in Sources */,
+				CE90F6F12C9E64BF00A180FF /* BelyaevaDEMOApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE90F6F92C9E64C100A180FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE90F6FA2C9E64C100A180FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE90F6FC2C9E64C100A180FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BelyaevaDEMO/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.BelyaevaDEMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE90F6FD2C9E64C100A180FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BelyaevaDEMO/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.BelyaevaDEMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE90F6E82C9E64BF00A180FF /* Build configuration list for PBXProject "BelyaevaDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE90F6F92C9E64C100A180FF /* Debug */,
+				CE90F6FA2C9E64C100A180FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE90F6FB2C9E64C100A180FF /* Build configuration list for PBXNativeTarget "BelyaevaDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE90F6FC2C9E64C100A180FF /* Debug */,
+				CE90F6FD2C9E64C100A180FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE90F7152C9E6E3C00A180FF /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		CE90F7172C9E6E3C00A180FF /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		CE90F7192C9E6E3C00A180FF /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		CE90F71B2C9E6E3C00A180FF /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		CE90F71D2C9E6E3C00A180FF /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		CE90F7202C9E6E5C00A180FF /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE90F7142C9E6E3C00A180FF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CE90F6E52C9E64BF00A180FF /* Project object */;
+}
